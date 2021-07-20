@@ -1,31 +1,40 @@
 const quiz = [
   {
-    question: 'ゲーム史上、最も売れたゲーム機は次のうちどれ？',
+    question: 'ミヤの本名は？',
     answers: [
-      'スーパーファミコン',
-      'プレステ２',
-      'ニンテンドースイッチ',
-      'ニンテンドーDS'
+      '坂本月彦',
+      '天堂貴文',
+      '吉田さん',
+      '宮沢雄一'
     ],
-    correct: 'ニンテンドーDS'
+    correct: '宮沢雄一'
   },{
-    question: '糸井重里が企画に関わった、任天堂の看板ゲームといえば？',
+    question: 'つばきの苗字は？',
     answers: [
-      'MOTHER2',
-      'スーパーマリオブラザーズ３',
-      'スーパードンキーコング',
-      '星のカービィ'
+      '坂本',
+      '宮沢',
+      '才木',
+      '谷'
     ],
-    correct: 'MOTHER2'
+    correct: '才木'
   },{
-    question: 'ファイナルファンタジーIVの主人公の名前は？？',
+    question: 'カー坊の本名は？',
     answers: [
-      'フリオニール',
-      'クラウド',
-      'ティーダ',
-      'セシル'
+      'えんチョー',
+      'ボンチュー',
+      '馬場宏美',
+      '村上勝也'
     ],
-    correct: 'セシル'
+    correct: '村上勝也'
+  },{
+    question: 'マミーファミリーの中で、四天王の爪が長くて、チーター柄のパンツを履いている人は？',
+    answers: [
+      'ガイ',
+      'ダムー',
+      '黒豹',
+      'ピース'
+    ],
+    correct: 'ダムー'
   }
 ];
 
@@ -53,10 +62,10 @@ setupQuiz();
 
 const clickHandler = (e) => {
  if(quiz[quizIndex].correct === e.target.textContent){
-   window.alert('正解！');
+   window.alert('正解！！');
    score++;
  }else{
-   window.alert('不正解！')
+   window.alert('残念！！')
  }
  quizIndex++;
 
